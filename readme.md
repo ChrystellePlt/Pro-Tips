@@ -158,14 +158,35 @@ htlm {
 
 ## Cacher un élément en CSS
 
-* Display : none 
+* **Display : none** 
 La balise qui possède cette caractéristique CSS n'apparaîtra pas dans la page bien qu'il soit toujours possible d'interagir avec elle à travers le DOM. Aucune place ne lui sera allouée entre les autres balises.
 
-* Visibility : hidden
+* **Visibility : hidden**
 Visibility hidden rendra l'élément invisible mais l'espace qui lui est attribué lorsqu'il est visible sera gardé. Il n'est pas possible une transition sur une propriété visibility.
 
-* Opacity : 0
+* **Opacity : 0**
 Une opacité réglée à 0 rendra invisible un élément mais il continuera d'occuper son espace dans le DOM. Il est possible d'appliquer des transitions sur cette propriété, et donc par exemple de faire apparaître un élément graduellement. 
+
+## Garder un ratio 
+
+Pour créer des éléments qui gardent le même ratio lorsque la fenêtre est redimensionnée : 
+* Créer une *DIV* qui servira de container
+
+```HTML
+<div class="container"> 
+</div>
+
+```
+* Donner une largeur *width* en pourcentage au container. Ajouter un attribut CSS *paddind-top* au container et lui donner une valeur en pourcentage. Le container gardera ainsi toujours le même ratio.
+
+```CSS
+.container {
+    background-color: turquoise;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+```
+
 
 ## Cheatsheets
 
@@ -181,7 +202,7 @@ Une opacité réglée à 0 rendra invisible un élément mais il continuera d'oc
 
 * GraphQL : https://raw.githubusercontent.com/sogko/graphql-shorthand-notation-cheat-sheet/master/graphql-shorthand-notation-cheat-sheet.png
 
-Liste complète dans cet article : https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a
+*Liste complète dans cet article : https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a*
 
 
 ## Liens utiles
