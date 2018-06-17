@@ -159,3 +159,45 @@ htlm {
 ```
 
 ## Liens utiles
+
+### Flexbox
+
+Un article complet pour comprendre le système des flexboxs et comment utiliser cette propriété CSS :
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+### Grids
+
+Un article complet pour comprendre comment fonctionnent les grids en CSS et apprendre à s'en servir:
+
+https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228
+
+Un cours gratuit et complet en vidéos pour devenir un grid master : 
+
+https://medium.freecodecamp.org/heres-my-free-css-grid-course-merry-christmas-3826dd24f098
+
+### CSS MASTER
+
+Un article remplis de pro tips pour tout ceux qui veulent masteriser le CSS 
+
+https://medium.com/@peedutuisk/lesser-known-css-quirks-oddities-and-advanced-tips-css-is-awesome-8ee3d16295bb
+
+## CHEATSHEETS
+
+* JavaScript : http://overapi.com/javascript
+
+* React :  https://devhints.io/react
+
+* Redux : https://github.com/linkmesrl/react-journey-2016/blob/master/resources/egghead-redux-cheat-sheet-3-2-1.pdf
+
+* VueJS : https://vuejs-tips.github.io/cheatsheet/
+
+* SCSS : https://devhints.io/sass
+
+* GraphQL : https://raw.githubusercontent.com/sogko/graphql-shorthand-notation-cheat-sheet/master/graphql-shorthand-notation-cheat-sheet.png
+
+* Liste complète dans cet article : https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a
+
+
+
+
