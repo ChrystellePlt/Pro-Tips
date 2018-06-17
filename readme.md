@@ -160,15 +160,15 @@ htlm {
 
 * **Display : none**
 
-La balise qui possède cette caractéristique CSS n'apparaîtra pas dans la page bien qu'il soit toujours possible d'interagir avec elle à travers le DOM. Aucune place ne lui sera allouée entre les autres balises.
+L'élément n'apparaîtra pas dans la page bien qu'il soit toujours possible d'interagir avec lui à travers le DOM. Aucune place ne lui sera alloué dans la page.
 
 * **Visibility : hidden**
 
-Visibility hidden rendra l'élément invisible mais l'espace qui lui est attribué lorsqu'il est visible sera gardé. Il n'est pas possible une transition sur une propriété visibility.
+Visibility hidden rendra l'élément invisible mais l'espace qui lui est attribué lorsqu'il est visible sera gardé. Il n'est pas possible d'effectuer de transition sur une propriété visibility.
 
 * **Opacity : 0** 
 
-Une opacité réglée à 0 rendra invisible un élément mais il continuera d'occuper son espace dans le DOM. Il est possible d'appliquer des transitions sur cette propriété, et donc par exemple de faire apparaître un élément graduellement. 
+Une opacité réglée à 0 rendra invisible un élément mais il continuera d'occuper son espace dans la page. Il est possible d'appliquer des transitions sur cette propriété, et donc par exemple de faire apparaître un élément graduellement. 
 
 ## Garder un ratio 
 
@@ -180,7 +180,7 @@ Pour créer des éléments qui gardent le même ratio lorsque la fenêtre est re
 </div>
 
 ```
-* Donner une largeur *width* en pourcentage au container. Ajouter un attribut CSS *padding-top* au container et lui donner une valeur en pourcentage. Le container gardera ainsi toujours le même ratio.
+* Donner une largeur *width* en pourcentage au container. Ajouter un attribut CSS *padding-top* au container et lui donner une valeur en pourcentage. Le container gardera ainsi toujours le même ratio. Ex : un carré restera toujours carré.
 
 ```CSS
 .container {
