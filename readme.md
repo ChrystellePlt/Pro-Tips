@@ -156,6 +156,55 @@ htlm {
 }
 ```
 
+## Positionner un élément en CSS
+
+La propriété *position* permet de spécifier le type de méthode de positionnement à appliquer à un élément. Elle accepte 5 valeurs : static, relative, absolute, fixed ou sticky.
+
+* Static : Valeur par défaut. L'élément n'est positionné d'aucune manière spéciale. Un élément static est dit *non positionné* et un élément avec une propriété position ayant une valeur autre que static est dit *positionné*.
+
+```CSS
+.element {
+  position: static;
+  background-color: white;
+  width: 500px;
+}
+```
+
+* Relative : Relative se comporte de la même façon que static sauf si des propriétés supplémentaires lui sont ajoutées, comme par exemple : *top, right, bottom et left*.
+
+```CSS
+.element {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 200px;
+}
+```
+
+* Fixed : Un élément positionné en fixed est positionné par rapport à la fenêtre du navigateur et restera toujours à la même place même si la page défile. De la même manière qu'avec un élément positionné en relative, il est possible d'utiliser les propriétés *top*, *right*, *bottom* et *left*.
+
+``` CSS
+.element {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 200px;
+}
+```
+* Absolute : Absolute se comporte comme fixed sauf que son positionnement est relatif à l'élément parent positionné le plus proche au lieu d'être relatif à la fenêtre du navigateur. Si un élément positionné en absolute n'à aucun élément parent positionné, il utilise le corps du document et se déplace avec le document au défilement de la page.
+
+```CSS
+.element {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 200px;
+  height: 300px;
+}
+```
+
 ## Cacher un élément en CSS
 
 * **Display : none**
@@ -189,6 +238,32 @@ Pour créer des éléments qui gardent le même ratio lorsque la fenêtre est re
     padding-top: 100%; /* 1:1 Aspect Ratio */
 }
 ```
+
+## @Font-face
+
+* Qu’est-ce que c’est ?
+
+La règle @font-face permet de définir les polices d'écriture à utiliser pour afficher le texte de pages web. Les utilisateurs ne sont plus obligés de choisir uniquement des polices dites « web-safe » (installées sur les postes des utilisateurs), ils peuvent à la place fournir des polices non standards. La règle @font-face peut être utilisée au niveau global d'une feuille de style et également au sein d'un groupe lié à une règle conditionnelle. Attention, elle ne peut pas être utilisée au sein d’une propriété CSS.
+
+* Comment l’utiliser ?
+
+L’utilisation basique de la règle @font-face est simple, il suffit de définir le nom de la police puis de signifier la source dans laquelle elle se trouve, comme dans l’exemple suivant :
+
+```CSS
+@font-face {
+  font-family: 'quadranta';
+  src: url('quadranta.eot');
+}
+```
+
+Pour l'utiliser, il suffit ensuite d'appliquer une propriété *font-family* à un élément et de lui spécifier le nom de la font-face :
+
+```CSS
+p {
+font-family: 'quadranta', serif;
+}
+```
+
 
 ## Cheatsheets
 
