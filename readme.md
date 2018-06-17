@@ -110,8 +110,6 @@ Ils sont essentiellement utilisés pour ajouter des ornements, des décorations.
 }
 ```
 
-
-
 ## REM, EM, %, VW Sizing
 
 ### %
@@ -158,31 +156,18 @@ htlm {
 }
 ```
 
-## Liens utiles
+## Cacher un élément en CSS
 
-### Flexbox
+* Display : none 
+La balise qui possède cette caractéristique CSS n'apparaîtra pas dans la page bien qu'il soit toujours possible d'interagir avec elle à travers le DOM. Aucune place ne lui sera allouée entre les autres balises.
 
-Un article complet pour comprendre le système des flexboxs et comment utiliser cette propriété CSS :
+* Visibility : hidden
+Visibility hidden rendra l'élément invisible mais l'espace qui lui est attribué lorsqu'il est visible sera gardé. Il n'est pas possible une transition sur une propriété visibility.
 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* Opacity : 0
+Une opacité réglée à 0 rendra invisible un élément mais il continuera d'occuper son espace dans le DOM. Il est possible d'appliquer des transitions sur cette propriété, et donc par exemple de faire apparaître un élément graduellement. 
 
-### Grids
-
-Un article complet pour comprendre comment fonctionnent les grids en CSS et apprendre à s'en servir:
-
-https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228
-
-Un cours gratuit et complet en vidéos pour devenir un grid master : 
-
-https://medium.freecodecamp.org/heres-my-free-css-grid-course-merry-christmas-3826dd24f098
-
-### CSS MASTER
-
-Un article remplis de pro tips pour tout ceux qui veulent masteriser le CSS 
-
-https://medium.com/@peedutuisk/lesser-known-css-quirks-oddities-and-advanced-tips-css-is-awesome-8ee3d16295bb
-
-## CHEATSHEETS
+## Cheatsheets
 
 * JavaScript : http://overapi.com/javascript
 
@@ -196,7 +181,34 @@ https://medium.com/@peedutuisk/lesser-known-css-quirks-oddities-and-advanced-tip
 
 * GraphQL : https://raw.githubusercontent.com/sogko/graphql-shorthand-notation-cheat-sheet/master/graphql-shorthand-notation-cheat-sheet.png
 
-* Liste complète dans cet article : https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a
+Liste complète dans cet article : https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a
+
+
+## Liens utiles
+
+### Flexbox
+
+Un article complet pour comprendre le système des flexboxs et comment utiliser cette propriété CSS :
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+### Grids
+
+Un article complet pour comprendre comment fonctionnent les grids en CSS et apprendre à s'en servir :
+
+https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228
+
+Un cours gratuit et complet en vidéos pour devenir un grid master : 
+
+https://medium.freecodecamp.org/heres-my-free-css-grid-course-merry-christmas-3826dd24f098
+
+### CSS master
+
+Un article remplis de pro tips pour tout ceux qui veulent masteriser le CSS :
+
+https://medium.com/@peedutuisk/lesser-known-css-quirks-oddities-and-advanced-tips-css-is-awesome-8ee3d16295bb
+
+
 
 
 
