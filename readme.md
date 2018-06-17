@@ -160,7 +160,7 @@ htlm {
 
 La propriété *position* permet de spécifier le type de méthode de positionnement à appliquer à un élément. Elle accepte 5 valeurs : static, relative, absolute, fixed ou sticky.
 
-* Static : Valeur par défaut. L'élément n'est positionné d'aucune manière spéciale. Un élément static est dit *non positionné* et un élément avec une propriété position ayant une valeur autre que static est dit *positionné*.
+* **Static :** Valeur par défaut. L'élément n'est positionné d'aucune manière spéciale. Un élément static est dit *non positionné* et un élément avec une propriété position ayant une valeur autre que static est dit *positionné*.
 
 ```CSS
 .element {
@@ -170,7 +170,7 @@ La propriété *position* permet de spécifier le type de méthode de positionne
 }
 ```
 
-* Relative : Relative se comporte de la même façon que static sauf si des propriétés supplémentaires lui sont ajoutées, comme par exemple : *top, right, bottom et left*.
+* **Relative :** Relative se comporte de la même façon que static sauf si des propriétés supplémentaires lui sont ajoutées, comme par exemple : *top, right, bottom et left*.
 
 ```CSS
 .element {
@@ -182,7 +182,7 @@ La propriété *position* permet de spécifier le type de méthode de positionne
 }
 ```
 
-* Fixed : Un élément positionné en fixed est positionné par rapport à la fenêtre du navigateur et restera toujours à la même place même si la page défile. De la même manière qu'avec un élément positionné en relative, il est possible d'utiliser les propriétés *top*, *right*, *bottom* et *left*.
+* **Fixed :** Un élément positionné en fixed est positionné par rapport à la fenêtre du navigateur et restera toujours à la même place même si la page défile. De la même manière qu'avec un élément positionné en relative, il est possible d'utiliser les propriétés *top*, *right*, *bottom* et *left*.
 
 ``` CSS
 .element {
@@ -193,7 +193,7 @@ La propriété *position* permet de spécifier le type de méthode de positionne
   width: 200px;
 }
 ```
-* Absolute : Absolute se comporte comme fixed sauf que son positionnement est relatif à l'élément parent positionné le plus proche au lieu d'être relatif à la fenêtre du navigateur. Si un élément positionné en absolute n'à aucun élément parent positionné, il utilise le corps du document et se déplace avec le document au défilement de la page.
+* **Absolute :** Absolute se comporte comme fixed sauf que son positionnement est relatif à l'élément parent positionné le plus proche au lieu d'être relatif à la fenêtre du navigateur. Si un élément positionné en absolute n'à aucun élément parent positionné, il utilise le corps du document et se déplace avec le document au défilement de la page.
 
 ```CSS
 .element {
@@ -202,6 +202,17 @@ La propriété *position* permet de spécifier le type de méthode de positionne
   right: 0;
   width: 200px;
   height: 300px;
+}
+```
+
+* **Sticky :** Un élément sticky se positionne par rapport à la position du scroll de l'utilisateur. Il alterne entre position *relative* et *fixed*, cela dépend de la position du scroll. L'élément est positionné en relative jusqu'à ce qu'il atteigne une position donnée - là, il "s'accroche" à cette position (comme une position *fixed*).  
+
+```CSS
+.element {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: white;
 }
 ```
 
