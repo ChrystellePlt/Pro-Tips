@@ -158,13 +158,16 @@ htlm {
 
 ## Cacher un élément en CSS
 
-* **Display : none** 
+* **Display : none**
+
 La balise qui possède cette caractéristique CSS n'apparaîtra pas dans la page bien qu'il soit toujours possible d'interagir avec elle à travers le DOM. Aucune place ne lui sera allouée entre les autres balises.
 
 * **Visibility : hidden**
+
 Visibility hidden rendra l'élément invisible mais l'espace qui lui est attribué lorsqu'il est visible sera gardé. Il n'est pas possible une transition sur une propriété visibility.
 
-* **Opacity : 0**
+* **Opacity : 0** 
+
 Une opacité réglée à 0 rendra invisible un élément mais il continuera d'occuper son espace dans le DOM. Il est possible d'appliquer des transitions sur cette propriété, et donc par exemple de faire apparaître un élément graduellement. 
 
 ## Garder un ratio 
@@ -177,7 +180,7 @@ Pour créer des éléments qui gardent le même ratio lorsque la fenêtre est re
 </div>
 
 ```
-* Donner une largeur *width* en pourcentage au container. Ajouter un attribut CSS *paddind-top* au container et lui donner une valeur en pourcentage. Le container gardera ainsi toujours le même ratio.
+* Donner une largeur *width* en pourcentage au container. Ajouter un attribut CSS *padding-top* au container et lui donner une valeur en pourcentage. Le container gardera ainsi toujours le même ratio.
 
 ```CSS
 .container {
@@ -186,7 +189,6 @@ Pour créer des éléments qui gardent le même ratio lorsque la fenêtre est re
     padding-top: 100%; /* 1:1 Aspect Ratio */
 }
 ```
-
 
 ## Cheatsheets
 
@@ -228,6 +230,12 @@ https://medium.freecodecamp.org/heres-my-free-css-grid-course-merry-christmas-38
 Un article remplis de pro tips pour tout ceux qui veulent masteriser le CSS :
 
 https://medium.com/@peedutuisk/lesser-known-css-quirks-oddities-and-advanced-tips-css-is-awesome-8ee3d16295bb
+
+### The THIS keyword in JavaScript 
+
+Un bon article/vidéo pour clarifier le concept un peu complexe du THIS en JavaScript :
+
+https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/
 
 
 
