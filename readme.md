@@ -151,7 +151,7 @@ htlm {
 * VW : très utile pour les interfaces fluides.
 
 ```css
-htlm {
+html {
   font-size: 62,5%;
 }
 ```
